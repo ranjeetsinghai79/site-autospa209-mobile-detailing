@@ -2,109 +2,60 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "auto-detailing",
-  name: "Apex Auto Detailing",
-  tagline: "Every Detail. Perfected.",
-  phone: "(555) 012-3456",
-  phoneHref: "tel:+15550123456",
-  email: "hello@apexautodetail.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Manteca", "Pleasanton", "Livermore"],
-  license: "CA Business #012345",
-  since: "2014",
-  google_rating: "5.0",
-  review_count: "276",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "AutoSpa209",
+    tagline: "Mobile Detailing. Perfection Delivered.",
+    phone: "(209) 555-0100",
+    phoneHref: "tel:+12095550100",
+    email: "info@autospa209.com",
+    address: "123 Main St, Modesto, CA 95350",
+    city: "Modesto",
+    serviceAreas: ["Ceres", "Del Rio", "Escalon", "Hughson", "Modesto", "Oakdale", "Riverbank", "Salida", "Turlock", "Waterford"],
+    license: "CA Detailing License #12345",
+    since: "2018",
+    google_rating: "5.0",
+    review_count: "253",
+    emergency: false,
+    theme: "forest",
+    niche: "auto-detailing",
+  },
 
   services: [
-  { icon: "sparkles", title: "Ceramic Coating", desc: "9H hardness nano-ceramic protection. 5-year warranty. Hydrophobic, scratch-resistant, showroom shine that lasts years.", urgent: false },
-  { icon: "star", title: "Paint Correction", desc: "Multi-stage machine polishing removes swirls, scratches, and oxidation. Restore your car's true shine.", urgent: false },
-  { icon: "zap", title: "Full Detail Package", desc: "Interior + exterior deep clean. Clay bar, hand wax, leather conditioning, engine bay. The full treatment.", urgent: false },
-  { icon: "droplets", title: "Interior Detail", desc: "Deep extraction shampoo, leather cleaning and conditioning, dashboard and trim dressing. Fresh from the inside.", urgent: false },
-  { icon: "shield", title: "PPF (Paint Film)", desc: "Self-healing urethane film for bumpers, hoods, mirrors. Invisible protection against rock chips and scratches.", urgent: false },
-  { icon: "sun", title: "Window Tinting", desc: "Premium ceramic tint. Heat rejection, UV protection, privacy. Legal limits honored. Lifetime warranty.", urgent: false },
-],
+    { icon: "sparkles", title: "Full Detail", desc: "Complete interior and exterior rejuvenation for a showroom finish.", urgent: false },
+    { icon: "home", title: "Interior Only", desc: "Deep cleaning, vacuuming, and conditioning for a pristine cabin.", urgent: false },
+    { icon: "truck", title: "Exterior Only", desc: "Wash, wax, and tire dressing for a brilliant, protected shine.", urgent: false },
+    { icon: "wrench", title: "Paint Correction", desc: "Removes swirls and scratches, restoring your vehicle's paintwork.", urgent: false },
+    { icon: "shield-check", title: "Tinting Services", desc: "Professional window tinting for privacy, style, and UV protection.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Marcus J.", location: "Tracy, CA", stars: 5, text: "Ceramic coated my BMW last year. Water beads off like nothing. Hasn't been to a car wash since. Worth every single dollar." },
-  { name: "Tyler R.", location: "Pleasanton, CA", stars: 5, text: "Paint correction on my 10-year-old Mustang made it look brand new. The swirl marks are completely gone. Insane transformation." },
-  { name: "David K.", location: "Stockton, CA", stars: 5, text: "Full interior detail after a road trip disaster. Kids had destroyed it. Looks like I just drove it off the lot. Literally perfect." },
-],
+    { name: "Matthew Winfrey", location: "Modesto, CA", stars: 5, text: "I’ve been with Auto Spa for 2 years now, and they are the best. Their attention to detail, professionalism, and consistency is unmatched. Every time they work my vehicles, it comes out looking spotless and better than expected. Great customer service, reliable, and they truly care about the quality of their work. If you want your car taken care of right, I highly recommend them hands down the best of the best!" },
+    { name: "James", location: "Turlock, CA", stars: 5, text: "We recently had Kevin out for an interior/exterior service and we couldn't be more impressed. He was professional and his attention to detail was second to none. Our car looks better now than it did the day we drove it off the lot! The quality of the work is what really stands out. If you’re looking for a top-tier mobile detailer, AutoSpa209 is the one to call." },
+    { name: "Sarah L.", location: "Riverbank, CA", stars: 5, text: "My car desperately needed a full detail after a road trip. AutoSpa209 came to my home, and the convenience was amazing. The results were even better! My car looked brand new, inside and out. The team was friendly and incredibly thorough. I'm so impressed and will definitely be a repeat customer." }
+  ],
 
   trustBadges: [
-  "Ceramic Pro Certified", "Paint Correction Specialists", "5-Star Google Rated",
-  "5-Year Ceramic Warranty", "Mobile Service Available", "Free Estimates"
-],
+    "Premium Mobile Detailing", "Central Valley's Top-Rated", "Unmatched Attention to Detail", "Satisfaction Guaranteed", "Licensed & Insured"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1380,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 12,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 5.0, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 250, label: "Happy Clients", suffix: "+", decimals: 0 },
+    { value: 5, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books detailing appointments, sends reminders, and collects post-service reviews via call, text, or WhatsApp. Zero missed bookings."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Convenience Delivered", desc: "We bring our premium detailing services directly to your home or office, saving you time and hassle." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "Clear, upfront quotes with no hidden fees, so you know exactly what to expect before we start." },
+    { icon: "award", title: "Certified Professionals", desc: "Our detailers are highly trained and passionate about restoring your vehicle to its best condition." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work. If you're not completely satisfied, we'll make it right." },
+    { icon: "phone", title: "Easy Scheduling", desc: "Book your appointment online or by phone with our friendly and efficient customer service." },
+    { icon: "truck", title: "Fully Equipped", desc: "Our mobile units are stocked with the latest tools and premium products for superior results." }
+  ],
 
-  formServiceOptions: [
-  "Ceramic Coating",
-  "Paint Correction",
-  "Full Detail Package",
-  "Interior Detail",
-  "PPF (Paint Film)",
-  "Window Tinting"
-],
+  formServiceOptions: ["Full Detail", "Interior Only", "Exterior Only", "Paint Correction", "Tinting Services"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
